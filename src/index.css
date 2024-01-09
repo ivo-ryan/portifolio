@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color)
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.heading{
+  text-align:center;
+  font-size: 4.5rem;
+  
+}
+
+.heading span{
+  color: var(--main-color);
+}
+
+svg{
+  animation: rota 4s ease alternate infinite ;
+}
+
+@keyframes rota {
+  from{
+    transform: scale(1.0);
+  }
+  to{
+    transform: scale(1.1);
+  }
+  
+}
