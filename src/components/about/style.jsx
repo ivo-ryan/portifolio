@@ -1,73 +1,82 @@
 import styled from 'styled-components';
 
 
-export const SoftSkils = styled.ul`
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            gap: 20px;
-
-            li{
-                display: flex;
-                width: 50%;
-                justify-content: space-between;
-                align-items: center;
-
-            }
-
-`;
-
-
 export const HomeSection = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 50px;
             gap: 10%;
-`;
 
-export const HomeContent = styled.div`
-            max-width: 50vw;
-           
+            
+            @media (max-width: 768px) {
+                flex-direction:column;
 
-            h1{
-                font-weight: 700;
-                font-size: 5.6rem;
-                line-height: 1.3;
+                 img{
+                    width: 70vw;
+                    margin-top: 4rem;
+                 }
             }
 
-            h3{
-                font-size: 3.2rem;
-                font-weight: 700;
-                margin-bottom: 2rem;
-
-                span{
-                    color: var(--main-color);
+            @media (max-width: 375px) {
+                img{
+                    width: 90vw;
                 }
             }
 
-            p{
-                font-size: 1.6rem;
-            }
-
-            .bth{
-                display: inline-block;
-                padding: 1rem 2.8rem;
-                background-color: var(--main-color);
-                border-radius: 4rem;
-                box-shadow: 0 0 1rem var(--main-color);
-                text-decoration: none;
-                color: var(--second-bg-color);
-                letter-spacing: .1rem;
-                font-weight: 800;
-                font-size: 1.6rem ;
-                transition: .5s ease-in;
-
-                &:hover{
-                    box-shadow: none;
+            .home-content{
+                width: 50vw;
+                heigth: 50%;
+               
+    
+                h1{
+                    font-weight: 700;
+                    font-size: 5.6rem;
+                    line-height: 1.3;
                 }
+    
+                h3{
+                    font-size: 3.2rem;
+                    font-weight: 700;
+                    margin-bottom: 2rem;
+    
+                    span{
+                        color: var(--main-color);
+                    }
+                }
+    
+                p{
+                    font-size: 1.6rem;
+                }
+    
+                .bth{
+                    display: inline-block;
+                    padding: 1rem 2.8rem;
+                    background-color: var(--main-color);
+                    border-radius: 4rem;
+                    box-shadow: 0 0 1rem var(--main-color);
+                    text-decoration: none;
+                    color: var(--second-bg-color);
+                    letter-spacing: .1rem;
+                    font-weight: 800;
+                    font-size: 1.6rem ;
+                    transition: .5s ease-in;
+    
+                    &:hover{
+                        box-shadow: none;
+                    }
+    
+                    
+                }
+    
+                @media (max-width: 768px) {
+                    width: 80vw;
+                }
+    
+                @media (max-width: 375px) {
+                    width: 80vw;
+                }
+
             }
 `;
 
@@ -111,28 +120,39 @@ export const SocialMedia = styled.div`
 
 
 export const ContainerAbout = styled.section`
+            width: 100%;
             display: flex;
-           justify-content: center;
-           align-items: center;
-           gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
             background-color: var(--second-bg-color);
+
+            @media (max-width: 768px){
+                flex-direction: column-reverse;
+
+                img{
+                    width: 70vw;
+                    margin-top: 0;
+                }
+            }
+
+            @media (max-width: 375px) {
+                img{
+                    width: 90vw;
+                }
+            }
            
 `;
 
 export const AboutImg = styled.div`
+        display: flex;
+        justify-content: center;
         width: 35vw;
 `;
 
-export const Heading = styled.h2`
-        text-align:center;
-        font-size: 4.5rem;
-
-        span{
-            color: var(--main-color);
-        }
-`;
-
 export const AboutContent = styled.div`
+        max-width: 50vw;
+
          h2{
             text-align: left;
             line-height: 1.2;
@@ -163,5 +183,13 @@ export const AboutContent = styled.div`
             &:hover{
                 box-shadow: none;
             }
+        }
+
+        @media (max-width: 768px) {
+            width: 80vw;
+        }
+
+        @media (max-width: 375px) {
+            width: 80vw;
         }
 `;

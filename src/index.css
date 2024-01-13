@@ -12,8 +12,10 @@
   --bg-color: #1f242d;
   --second-bg-color: #323946;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color:#AA1DEF; 
 }
+
+
 
 html{
     overflow-x: hidden;
@@ -23,6 +25,7 @@ html{
 body{
   background-color: var(--bg-color);
   color: var(--text-color)
+  
 }
 
 main{
@@ -30,13 +33,12 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 10rem;
 }
 
 .heading{
   text-align:center;
   font-size: 4.5rem;
-  
 }
 
 .heading span{
@@ -47,12 +49,53 @@ svg{
   animation: rota 4s ease alternate infinite ;
 }
 
+
 @keyframes rota {
   from{
     transform: scale(1.0);
+   
   }
   to{
     transform: scale(1.1);
   }
   
 }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+
+  section{
+      padding: 10rem 3% 2rem;
+  }
+
+  
+  @media (max-width: 768px) {
+                    
+    #home h3{
+        font-size: 2.6rem;
+    }
+
+    #home h1{
+        font-size: 5rem;
+    }
+
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+
+  footer{
+    
+    padding: 2rem 3%;
+  }
+}
+

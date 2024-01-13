@@ -8,6 +8,14 @@ export const ServicesSt = styled.section`
 
         }
 
+        @media (max-width: 991px){
+            margin-bottom: 7rem;
+        }
+
+        @media (max-width: 768px){
+            margin-bottom: 3rem;
+        }
+
 `;
 
 export const ServicesContainer = styled.div`

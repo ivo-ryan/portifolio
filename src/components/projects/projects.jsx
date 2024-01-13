@@ -19,8 +19,18 @@ export const Projects = () => {
 
                 <a href="#"><BiLinkExternal/></a>
                     </PortifolioLayer>
-                    
+                </PortifolioBox>
 
+
+                <PortifolioBox >
+                    <img src={Code} alt="" />
+
+                    <PortifolioLayer className="portifolio-layer" >
+                    <h4>web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem minima assumenda </p>
+
+                <a href="#"><BiLinkExternal/></a>
+                    </PortifolioLayer>            
                 </PortifolioBox>
 
    
@@ -33,8 +43,9 @@ export const Projects = () => {
 
                 <a href="#"><BiLinkExternal/></a>
                     </PortifolioLayer>
-
                 </PortifolioBox>
+
+
 
                 <PortifolioBox >
                 <img src={Code} alt="" />
@@ -45,8 +56,8 @@ export const Projects = () => {
 
                 <a href="#"><BiLinkExternal/></a>
                     </PortifolioLayer>
-
                 </PortifolioBox>
+                
 
             </PortifolioContainer>
 

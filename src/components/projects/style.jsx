@@ -6,6 +6,16 @@ export const Portifolio = styled.section`
         h2{
             margin-bottom: 4rem;
         }
+
+        @media (max-width: 991px) {
+            padding-bottom: 7rem;
+        }
+
+        @media (max-width: 768px) {
+            h2{
+                margin-bottom: 3rem;
+            }
+        }
 `;
 
 export const PortifolioContainer = styled.div`
@@ -13,6 +23,14 @@ export const PortifolioContainer = styled.div`
             grid-template-columns: repeat(3, 1fr);
             align-items: center;
             gap:2.5rem;
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 600px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
 `;
 
 export const PortifolioBox  = styled.div`
