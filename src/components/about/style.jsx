@@ -127,6 +127,50 @@ export const ContainerAbout = styled.section`
             gap: 2rem;
             background-color: var(--second-bg-color);
 
+            .about-content{
+                max-width: 50vw;
+
+                h2{
+                   text-align: left;
+                   line-height: 1.2;
+                }   
+       
+                h3{
+                   font-size: 2.6rem;
+                }
+       
+                p{
+                   font-size: 1.6rem;
+                   margin: 2rem 0 3rem;
+                }
+       
+                .bth{
+                   display: inline-block;
+                   padding: 1rem 2.8rem;
+                   background-color: var(--main-color);
+                   border-radius: 4rem;
+                   box-shadow: 0 0 1rem var(--main-color);
+                   text-decoration: none;
+                   color: var(--second-bg-color);
+                   letter-spacing: .1rem;
+                   font-weight: 800;
+                   font-size: 1.6rem ;
+                   transition: .5s ease-in;
+       
+                   &:hover{
+                       box-shadow: none;
+                   }
+               }
+       
+               @media (max-width: 768px) {
+                   width: 80vw;
+               }
+       
+               @media (max-width: 375px) {
+                   width: 80vw;
+               }
+            }
+
             @media (max-width: 768px){
                 flex-direction: column-reverse;
 
@@ -141,6 +185,7 @@ export const ContainerAbout = styled.section`
                     width: 90vw;
                 }
             }
+
            
 `;
 
@@ -151,45 +196,5 @@ export const AboutImg = styled.div`
 `;
 
 export const AboutContent = styled.div`
-        max-width: 50vw;
-
-         h2{
-            text-align: left;
-            line-height: 1.2;
-         }   
-
-         h3{
-            font-size: 2.6rem;
-         }
-
-         p{
-            font-size: 1.6rem;
-            margin: 2rem 0 3rem;
-         }
-
-         .bth{
-            display: inline-block;
-            padding: 1rem 2.8rem;
-            background-color: var(--main-color);
-            border-radius: 4rem;
-            box-shadow: 0 0 1rem var(--main-color);
-            text-decoration: none;
-            color: var(--second-bg-color);
-            letter-spacing: .1rem;
-            font-weight: 800;
-            font-size: 1.6rem ;
-            transition: .5s ease-in;
-
-            &:hover{
-                box-shadow: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            width: 80vw;
-        }
-
-        @media (max-width: 375px) {
-            width: 80vw;
-        }
+       
 `;

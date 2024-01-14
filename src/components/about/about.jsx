@@ -1,5 +1,5 @@
 
-import { AboutContent, AboutImg, ContainerAbout, HomeImg, HomeSection, SocialMedia} from "./style";
+import { AboutImg, ContainerAbout, HomeImg, HomeSection, SocialMedia} from "./style";
 import { FaLinkedin , FaGithub , FaTelegram } from 'react-icons/fa';
 import home  from '../../assets/home.png';
 import { useRef, useEffect } from "react";
@@ -9,12 +9,15 @@ export const About = () => {
 
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
-    const mainControls = useAnimation()
+    const mainControls = useAnimation();
+    const slideControls = useAnimation();
   
     useEffect(() => {
       if (isInView) {
-        mainControls.start("visible")
+        mainControls.start("visible");
+        slideControls.start("visible");
       }
+
     } ,[isInView]);
 
     return (
@@ -30,7 +33,7 @@ export const About = () => {
     
               initial= "hidden"
               animate={mainControls}
-              transition={{duration: 0.8, delay: 0.25}}
+              transition={{duration: 0.8}}
               ref={ref}
             >
 
@@ -65,8 +68,20 @@ export const About = () => {
                     <img src={home} alt="" />
             </AboutImg>  
 
-       
-        <AboutContent>
+
+
+            <motion.div className="about-content"
+                variants={{
+                hidden: {opacity: 0, x: 85},
+                visible: {opacity:1, x: 0}
+              }}
+    
+              initial= "hidden"
+              animate={slideControls}
+              transition={{duration: 0.8, ease: "easeIn"}}
+             
+              ref={ref}
+            >
 
             <h2 className="heading">About <span>Me</span></h2>
 
@@ -81,7 +96,7 @@ export const About = () => {
             </p>
 
             <a href="#" className="bth">Read More</a>
-        </AboutContent>
+            </motion.div>
 
         </ContainerAbout>
         </>

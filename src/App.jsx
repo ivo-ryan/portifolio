@@ -5,8 +5,8 @@ import { Header } from './components/header/header';
 import { Projects } from './components/projects/projects';
 import { Services } from './components/services/services';
 import React from 'react';
-import { motion, useAnimation, useInView } from 'framer-motion';
-import { useRef, useEffect } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 
 
@@ -33,14 +33,10 @@ function App() {
 
 
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
-  const mainControls = useAnimation()
+  useInView(ref);
+  
 
-  useEffect(() => {
-    // if (isInView) {
-    //   mainControls.start("visible");
-    // }
-  } ,[])
+
 
   return (
     <>
