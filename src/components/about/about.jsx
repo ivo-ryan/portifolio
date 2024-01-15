@@ -1,46 +1,39 @@
 
-import { AboutImg, ContainerAbout, HomeImg, HomeSection, SocialMedia} from "./style";
+import { ContainerAbout, HomeSection, SocialMedia} from "./style";
 import { FaLinkedin , FaGithub , FaTelegram } from 'react-icons/fa';
-import home  from '../../assets/home.png';
-import { useRef, useEffect } from "react";
-import { useAnimation, motion, useInView } from "framer-motion";
+import home  from '../../assets/home.jpg';
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 export const About = () => {
 
-    const ref = useRef(null);
-    const isInView = useInView(ref, {once: true});
-    const mainControls = useAnimation();
-    const slideControls = useAnimation();
-  
-    useEffect(() => {
-      if (isInView) {
-        mainControls.start("visible");
-        slideControls.start("visible");
-      }
+      const ref =useRef(null);
 
-    } ,[isInView]);
+      useEffect(() => {
+        const typed = new Typed(ref.current, {
+          strings: ['Frontend Developer', 'Desenvolvedor Front-end'],
+          typeSpeed: 100,
+          backSpeed: 100,
+          backDelay: 1000,
+         
+        })
+
+        return () => {typed.destroy()}
+      } )
+
 
     return (
         <>
 
         <HomeSection id="home">
 
-            <motion.div className="home-content"
-                variants={{
-                hidden: {opacity: 0, x: -85},
-                visible: {opacity:1, x: 0}
-              }}
-    
-              initial= "hidden"
-              animate={mainControls}
-              transition={{duration: 0.8}}
-              ref={ref}
-            >
+            <div className="home-content">
 
-            <h2>Olá , eu me chamo </h2>
+            <h3 className="first-h3">Olá , eu me chamo </h3>
+
             <h1>Ivo Ryan</h1>
 
-            <h3>E sou um <span>Desenvolvedor Front-end</span> </h3>
+            <h3>E sou um <span ref={ref}></span> </h3>
 
             <p>
                 Olá! sou um desenvolvedor front end em formação! Me apaixonei pela área , hoje em dia me sinto capacitado para agregar em qualquer time , contribuindo com minhas habilidades . Sigo sempre buscando o aprimoramento com novos desafios , atualmente conclui o Curso do DevQuest com mentorias em grupo . O curso é focado em front-end e têm uma comunidade bem grande , que contribui muito com quem está iniciando.
@@ -54,33 +47,27 @@ export const About = () => {
 
             <a href="#" className="bth">Dowload CV</a>
 
-            </motion.div>
+            </div>
 
-            <HomeImg>
+            <div className="home-img">
                 <img src={home} alt="imagem" />
-            </HomeImg>
+            </div>
            
         </HomeSection>
 
+
+
+
         <ContainerAbout id="about">
 
-          <AboutImg>
+          <div className="about-img">
                     <img src={home} alt="" />
-            </AboutImg>  
+            </div>  
 
 
 
-            <motion.div className="about-content"
-                variants={{
-                hidden: {opacity: 0, x: 85},
-                visible: {opacity:1, x: 0}
-              }}
-    
-              initial= "hidden"
-              animate={slideControls}
-              transition={{duration: 0.8, ease: "easeIn"}}
-             
-              ref={ref}
+            <div className="about-content"
+               
             >
 
             <h2 className="heading">About <span>Me</span></h2>
@@ -96,7 +83,7 @@ export const About = () => {
             </p>
 
             <a href="#" className="bth">Read More</a>
-            </motion.div>
+            </div>
 
         </ContainerAbout>
         </>

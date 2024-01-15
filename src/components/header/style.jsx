@@ -32,7 +32,7 @@ export const Navbar = styled.header`
           }
 
         @media (max-width: 991px) {
-              padding: 4rem 5% 4rem;
+              padding: 2rem 3% ;
             }
 
         @media (max-width: 768px) {
@@ -73,7 +73,7 @@ export const Nav = styled.nav`
             width: 100%;
             padding: 1rem 3%;
             background: var(--bg-color);
-            border-top:  .1rem solid rgba(0, 0, 0, .2);
+            border-top: .1rem solid rgba(0, 0, 0, .2);
             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 
             a{

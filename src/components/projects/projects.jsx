@@ -1,15 +1,25 @@
 import { BiLinkExternal } from "react-icons/bi";
-import { Portifolio, PortifolioBox, PortifolioContainer, PortifolioLayer } from "./style";
+import { Portifolio, PortifolioBox, PortifolioLayer } from "./style";
 import Code from '../../assets/code.webp';
+
 
 export const Projects = () => {
 
+    ScrollReveal({
+        duration: 1500,
+        delay: 200,
+        distance: "50px"
+    });
+
+        ScrollReveal().reveal(".portifolio-container",{origin: 'left'})
 
     return (
         <Portifolio id="projects">
             <h2 className="heading">Latest <span>project</span></h2>
 
-            <PortifolioContainer >
+            <div  
+       
+           className="portifolio-container">
                 <PortifolioBox >
                     <img src={Code} alt="" />
 
@@ -59,7 +69,7 @@ export const Projects = () => {
                 </PortifolioBox>
                 
 
-            </PortifolioContainer>
+            </div>
 
         </Portifolio>
     )

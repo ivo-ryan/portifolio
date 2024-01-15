@@ -1,13 +1,13 @@
 import { FaJs, FaVuejs, } from 'react-icons/fa';
 import { BiLogoTypescript, BiLogoRedux, BiLogoReact } from 'react-icons/bi';
-import { ServicesBox, ServicesContainer, ServicesSt } from './style';
+import { ServicesBox , ServicesSt } from './style';
 
 export const Services = () => {
     return (
         <ServicesSt id="services">
                 <h2 className="heading">Tecnologias que <span>tenho trabalhado</span></h2>
 
-                <ServicesContainer>
+                <div className='services-container'>
                     <ServicesBox>
                         <BiLogoReact/>
 
@@ -34,13 +34,14 @@ export const Services = () => {
                         <h3>TypeScript</h3>
                        
                     </ServicesBox>
+                    
                     <ServicesBox>
                         <BiLogoRedux/>
 
                         <h3>Redux</h3>
                        
                     </ServicesBox>
-                </ServicesContainer>
+                </div>
         </ServicesSt>
     )
 }

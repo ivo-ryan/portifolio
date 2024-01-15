@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const ServicesSt = styled.section`
-            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
         h2 {
             margin-bottom: 5rem;
@@ -16,14 +18,14 @@ export const ServicesSt = styled.section`
             margin-bottom: 3rem;
         }
 
-`;
-
-export const ServicesContainer = styled.div`
+        .services-container{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             gap: 2rem;
+            width: 100vw;
+        }
 `;
 
 export const ServicesBox = styled.div`
@@ -34,6 +36,7 @@ export const ServicesBox = styled.div`
             text-align: center;
             border: .2rem solid var(--bg-color);
             max-width: 300px;
+            max-height: 300px;
             transition: .5s ease;
 
             &:hover{

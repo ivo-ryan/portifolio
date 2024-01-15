@@ -4,38 +4,23 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-bottom: 50px;
+            align-items: center;          
             gap: 10%;
 
-            
-            @media (max-width: 768px) {
-                flex-direction:column;
-
-                 img{
-                    width: 70vw;
-                    margin-top: 4rem;
-                 }
-            }
-
-            @media (max-width: 375px) {
-                img{
-                    width: 90vw;
-                }
-            }
 
             .home-content{
-                width: 50vw;
-                heigth: 50%;
-               
     
                 h1{
                     font-weight: 700;
                     font-size: 5.6rem;
                     line-height: 1.3;
                 }
+
+                .first-h3{
+                    margin-bottom: 0;
+                }
     
-                h3{
+                h3 {
                     font-size: 3.2rem;
                     font-weight: 700;
                     margin-bottom: 2rem;
@@ -68,27 +53,59 @@ export const HomeSection = styled.section`
     
                     
                 }
-    
-                @media (max-width: 768px) {
-                    width: 80vw;
-                }
-    
-                @media (max-width: 375px) {
-                    width: 80vw;
-                }
+            }
 
+            .home-img{
+                display: flex;
+                align-items: center;
+                justify-content: center;          
+        
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        animation: up-dow 4s ease alternate infinite;
+
+                        @keyframes up-dow {
+                            from{
+                                transform: translateY(-30px); 
+                            }
+                            to{
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+            }
+
+             
+            @media (max-width: 768px) {
+                flex-direction:column;
+
+                 img{
+                    width: 70vw;
+                    margin-top: 4rem;
+                 }
+
+                 .home-content{
+                    width: 80vw;
+
+
+                     h3{
+                        font-size: 2.6rem;
+                    }
+                
+                     h1{
+                        font-size: 5rem;
+                    }
+                 }
+            }
+
+            @media (max-width: 375px) {
+                img{
+                    width: 90vw;
+                }
             }
 `;
 
-export const HomeImg = styled.div`
-        display: flex;
-        align-items: center;
-        justify-content: center;          
-
-            img{
-                height: 600px;
-            }
-`;
 
 export const SocialMedia = styled.div`
             
@@ -120,6 +137,7 @@ export const SocialMedia = styled.div`
 
 
 export const ContainerAbout = styled.section`
+            min-height: 100vh;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -127,8 +145,14 @@ export const ContainerAbout = styled.section`
             gap: 2rem;
             background-color: var(--second-bg-color);
 
+            .about-img{
+                display: flex;
+                justify-content: center;
+                width: 300px;
+                height: 300px;
+            }
+
             .about-content{
-                max-width: 50vw;
 
                 h2{
                    text-align: left;
@@ -143,6 +167,15 @@ export const ContainerAbout = styled.section`
                    font-size: 1.6rem;
                    margin: 2rem 0 3rem;
                 }
+
+                @media (max-width: 768px) {
+                    width: 80vw;
+                }
+        
+                @media (max-width: 375px) {
+ 
+                }
+             }
        
                 .bth{
                    display: inline-block;
@@ -161,15 +194,7 @@ export const ContainerAbout = styled.section`
                        box-shadow: none;
                    }
                }
-       
-               @media (max-width: 768px) {
-                   width: 80vw;
-               }
-       
-               @media (max-width: 375px) {
-                   width: 80vw;
-               }
-            }
+               
 
             @media (max-width: 768px){
                 flex-direction: column-reverse;
@@ -187,14 +212,4 @@ export const ContainerAbout = styled.section`
             }
 
            
-`;
-
-export const AboutImg = styled.div`
-        display: flex;
-        justify-content: center;
-        width: 35vw;
-`;
-
-export const AboutContent = styled.div`
-       
 `;

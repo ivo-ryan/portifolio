@@ -23,34 +23,46 @@ function App() {
       let id = sec.getAttribute('id');
 
       if (top >= offset && top < offset + height) {
-          navLinks.forEach(links => {
-            links.classList.remove('active');
-            document.querySelector('header nav a[href*= ' + id + ']').classList.add('active');
-          })
+        navLinks.forEach(links => {
+          links.classList.remove('active');
+          document.querySelector('header nav a[href*= ' + id + ']').classList.add('active');
+        })
       }
     })
   };
 
 
+  ScrollReveal({
+    distance: '50px',
+    duration: 2000,
+    delay: 200
+  });
+
+  ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+  ScrollReveal().reveal('.home-img , .services-container', { origin: 'bottom' });
+  ScrollReveal().reveal('.about-img , .home-content h1', { origin: 'left' });
+  ScrollReveal().reveal('.home-content p , .about-content ', { origin: 'right' });
+
+
   const ref = useRef(null);
   useInView(ref);
-  
+
 
 
 
   return (
     <>
-        <Header/>
-        < motion.main
-          ref={ref}
-        >
-        <About/>
-        <Services/>
-        < Projects />
-        <Contact/>
-        <Footer/>
-        </motion.main>
-       
+      <Header />
+      < motion.main
+        ref={ref}
+      >
+        <About />
+        <Services />
+        <Projects />
+        <Contact />
+        <Footer />
+      </motion.main>
+
     </>
   )
 }
