@@ -38,6 +38,7 @@ main{
 
 section{
   min-height: 100vh;
+  min-width: 100vw;
   padding: 10rem 9% 2rem;
 }
 

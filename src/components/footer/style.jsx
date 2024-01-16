@@ -8,6 +8,7 @@ export const FooterSt = styled.footer`
             padding: 2rem 9%;
             background-color: var(--second-bg-color);
             width: 100% ;
+           
 `;
 
 export const FooterText = styled.div`

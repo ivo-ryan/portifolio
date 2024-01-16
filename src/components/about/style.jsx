@@ -140,7 +140,7 @@ export const ContainerAbout = styled.section`
             min-height: 100vh;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             gap: 2rem;
             background-color: var(--second-bg-color);
@@ -153,6 +153,7 @@ export const ContainerAbout = styled.section`
             }
 
             .about-content{
+                max-width: 50vw;
 
                 h2{
                    text-align: left;
@@ -169,12 +170,10 @@ export const ContainerAbout = styled.section`
                 }
 
                 @media (max-width: 768px) {
-                    width: 80vw;
+                    max-width: 80vw;
                 }
+
         
-                @media (max-width: 375px) {
- 
-                }
              }
        
                 .bth{
@@ -201,7 +200,7 @@ export const ContainerAbout = styled.section`
 
                 img{
                     width: 70vw;
-                    margin-top: 0;
+                    margin-top: 4rem;
                 }
             }
 
