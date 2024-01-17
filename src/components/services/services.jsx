@@ -5,7 +5,7 @@ import { ServicesBox , ServicesSt } from './style';
 export const Services = () => {
     return (
         <ServicesSt id="services">
-                <h2 className="heading">Tecnologias que <span>tenho trabalhado</span></h2>
+                <h2 className="heading">Technologies that <span> worked </span></h2>
 
                 <div className='services-container'>
                     <ServicesBox>

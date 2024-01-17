@@ -36,13 +36,13 @@ export const About = () => {
             <h3>E sou um <span ref={ref}></span> </h3>
 
             <p>
-                Olá! sou um desenvolvedor front end em formação! Me apaixonei pela área , hoje em dia me sinto capacitado para agregar em qualquer time , contribuindo com minhas habilidades . Sigo sempre buscando o aprimoramento com novos desafios , atualmente conclui o Curso do DevQuest com mentorias em grupo . O curso é focado em front-end e têm uma comunidade bem grande , que contribui muito com quem está iniciando.
+                Olá! sou um desenvolvedor front end ! Me apaixonei pela área , hoje em dia me estou capacitado para agregar em qualquer time , contribuindo com minhas habilidades . Sigo sempre buscando o aprimoramento com novos desafios , estou apto à aprender .
             </p>
 
             <SocialMedia>
-                <a href="#"><FaGithub/></a>
-                <a href="#"><FaLinkedin/></a>
-                <a href="#"><FaTelegram/></a>
+                <a href="https://github.com/ivo-ryan" target="_blank" ><FaGithub/></a>
+                <a href="https://www.linkedin.com/in/ryan-bastos-a0a8262a7/" target="_blank"  ><FaLinkedin/></a>
+                <a href="https://t.me/ivo_ryan" target="_blank" ><FaTelegram/></a>
             </SocialMedia>
 
             <a href="#" className="bth">Dowload CV</a>

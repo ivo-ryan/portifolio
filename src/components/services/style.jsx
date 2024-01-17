@@ -46,8 +46,19 @@ export const ServicesBox = styled.div`
 
             svg{
                 font-size: 7rem;
-                color: var(--main-color)
-                
+                color: var(--main-color);
+                animation: rota 4s ease alternate infinite ;
+
+                @keyframes rota {
+                    from{
+                      transform: scale(1.0);
+                     
+                    }
+                    to{
+                      transform: scale(1.1);
+                    }
+                    
+                  }
             }
 
             h3{

@@ -6,26 +6,34 @@ export const Contact = () => {
 
     const display = {
         hidde: 'none',
-        view: 'block'
+        view: 'block',
     }
 
-    const [ linkedin, setLinkedin ] = useState(display.hidde);
+    const background = {
+        linkedin: '#0A66C2',
+        whatsapp: '#32D670'
+    }
+
+    const [ linkedin, setLinkedin ] = useState(display.view);
     const [ telegram, setTelegram ] = useState(display.hidde);
     const [ whatsapp, setWhatsapp ] = useState(display.hidde);
+    const [ backColor, setBackColor ] = useState(background.linkedin)
 
     const handleClickLinkedin = () => {
             if (linkedin === display.hidde) {
-                setLinkedin(display.view)
-                setWhatsapp(display.hidde),
-                setTelegram(display.hidde)
+                setLinkedin(display.view);
+                setWhatsapp(display.hidde);
+                setTelegram(display.hidde);
+                setBackColor(background.linkedin)
             }
     }
 
     const handleClickTelegram = () => {
         if (telegram === display.hidde) {
-            setTelegram(display.view)
-            setWhatsapp(display.hidde),
-            setLinkedin(display.hidde)
+            setTelegram(display.view);
+            setWhatsapp(display.hidde);
+            setLinkedin(display.hidde);
+            setBackColor(background.linkedin)
         }
 }
 
@@ -34,8 +42,22 @@ const handleClickWhatsapp = () => {
         setWhatsapp(display.view),
         setLinkedin(display.hidde)
         setTelegram(display.hidde)
+        setBackColor(background.whatsapp)
     }
 }
+
+
+    ScrollReveal({
+        distance: '50px',
+        duration: 2000,
+        delay: 200,
+        opacity: 1
+    })
+
+    ScrollReveal().reveal('.card',{origin: 'left'})
+
+    ScrollReveal().reveal('.select',{origin: 'bottom'})
+
 
     return (
 
@@ -46,7 +68,7 @@ const handleClickWhatsapp = () => {
          <CardContainer >
             
 
-            <Card visible={linkedin} id="linkedin">
+            <Card visible={linkedin} className="card" background={backColor}>
 
             <div className="card-content">
 
@@ -56,11 +78,11 @@ const handleClickWhatsapp = () => {
                     Para entrar em contato basta clicar no botão abaixo
                 </p>
 
-                <a href="#">Mande uma mensagem</a>
+                <a href="https://www.linkedin.com/in/ryan-bastos-a0a8262a7/" target="_blank" >Ver perfil!</a>
             </div>
             </Card>
 
-            <Card  visible={telegram}  id="telegram">
+            <Card  visible={telegram}  className="card" background={backColor}>
 
             <div className="card-content">
                 <FaTelegram/>
@@ -69,11 +91,11 @@ const handleClickWhatsapp = () => {
                     Para entrar em contato basta clicar no botão abaixo
                 </p>
 
-                <a href="#">Mande uma mensagem</a>
+                <a href="https://t.me/ivo_ryan" target="_blank" >Iniciar conversa!</a>
             </div>
             </Card>
 
-            <Card  visible={whatsapp} id="whatsapp">
+            <Card  visible={whatsapp} className="card" background={backColor} >
 
                 <div className="card-content">
 
@@ -85,17 +107,23 @@ const handleClickWhatsapp = () => {
                     Para entrar em contato basta clicar no botão abaixo
                 </p>
 
-                <a href="#">Mande uma mensagem</a>
+                <a href="https://wa.me/5563992644269?text=OI%C3%A1%20Ryan%20,%20acabei%20de%20%20ver%20seu%20portifólio%20e%20queria%20conversar!" target="_blank">Iniciar conversa!</a>
 
                 </div>
             </Card>
 
-            <ul>
-                <li><buttom
+            <ul className="select">
+                <li>
+                    <button
                  onClick={() => handleClickLinkedin()}
-                ><FaLinkedin/></buttom></li>
-                <li><buttom  onClick={() => handleClickTelegram()}><FaTelegram/></buttom></li>
-                <li><buttom  onClick={() => handleClickWhatsapp()}><FaWhatsapp/></buttom></li>
+                ><FaLinkedin/></button>
+                </li>
+                <li>
+                    <button  onClick={() => handleClickTelegram()}><FaTelegram/></button>
+                    </li>
+                <li>
+                    <button  onClick={() => handleClickWhatsapp()}><FaWhatsapp/></button>
+                </li>
             </ul>
             
          </CardContainer>   

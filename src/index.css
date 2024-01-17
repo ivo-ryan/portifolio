@@ -51,21 +51,6 @@ section{
   color: var(--main-color);
 }
 
-svg{
-  animation: rota 4s ease alternate infinite ;
-}
-
-
-@keyframes rota {
-  from{
-    transform: scale(1.0);
-   
-  }
-  to{
-    transform: scale(1.1);
-  }
-  
-}
 
 @media (max-width: 1200px) {
   html {

@@ -40,7 +40,7 @@ export const PortifolioBox  = styled.div`
             box-shadow: 0 0 1rem var(--bg-color);
             overflow: hidden;
             display: flex;
-            max-width: 500px;
+            max-width: 600px;
 
             img{
                 width: 100%;
