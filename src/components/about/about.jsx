@@ -36,7 +36,7 @@ export const About = () => {
             <h3>E sou um <span ref={ref}></span> </h3>
 
             <p>
-                Olá! sou um desenvolvedor front end ! Me apaixonei pela área , hoje em dia me estou capacitado para agregar em qualquer time , contribuindo com minhas habilidades . Sigo sempre buscando o aprimoramento com novos desafios , estou apto à aprender .
+                Olá! sou um desenvolvedor front end ! Me apaixonei pela área , hoje em dia estou capacitado para agregar em qualquer time , contribuindo com as minhas habilidades . Sigo sempre buscando o aprimoramento com novos desafios , estou apto à aprender .
             </p>
 
             <SocialMedia>

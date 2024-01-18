@@ -9,7 +9,6 @@ export const CardContainer = styled.div`
         gap: 2rem;
         height: 80vh;
         
-
         h2{
             color: var(--main-color);
         }
@@ -59,9 +58,7 @@ export const CardContainer = styled.div`
 export const Card = styled.div`
         height: 50%;
         width: 60%;
-        display: ${props => props.visible};  
-       
-        
+        display: ${props => props.visible};   
 
         .card-content{
             display: flex;

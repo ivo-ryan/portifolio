@@ -66,7 +66,7 @@ export const Nav = styled.nav`
         
 
         @media (max-width: 768px) {
-            display: ${props => props.bx ? "block" : "none"};
+            display: ${props => props.display};
             position: absolute;
             top: 100%;
             left: 0;

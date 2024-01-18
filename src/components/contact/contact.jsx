@@ -47,17 +47,6 @@ const handleClickWhatsapp = () => {
 }
 
 
-    ScrollReveal({
-        distance: '50px',
-        duration: 2000,
-        delay: 200,
-        opacity: 1
-    })
-
-    ScrollReveal().reveal('.card',{origin: 'left'})
-
-    ScrollReveal().reveal('.select',{origin: 'bottom'})
-
 
     return (
 
@@ -65,10 +54,10 @@ const handleClickWhatsapp = () => {
 
             <h2 className="heading">Contact <span>Me!</span></h2>
 
-         <CardContainer >
+         <CardContainer className="card" >
             
 
-            <Card visible={linkedin} className="card" background={backColor}>
+            <Card visible={linkedin}  background={backColor}>
 
             <div className="card-content">
 
@@ -82,7 +71,7 @@ const handleClickWhatsapp = () => {
             </div>
             </Card>
 
-            <Card  visible={telegram}  className="card" background={backColor}>
+            <Card  visible={telegram}  background={backColor}>
 
             <div className="card-content">
                 <FaTelegram/>
@@ -95,7 +84,7 @@ const handleClickWhatsapp = () => {
             </div>
             </Card>
 
-            <Card  visible={whatsapp} className="card" background={backColor} >
+            <Card  visible={whatsapp} background={backColor} >
 
                 <div className="card-content">
 

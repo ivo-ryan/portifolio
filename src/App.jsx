@@ -12,11 +12,11 @@ import { useRef } from 'react';
 
 function App() {
 
-  let sectios = document.querySelectorAll('section');
+  let sections = document.querySelectorAll('section');
   let navLinks = document.querySelectorAll('header nav li a');
 
   window.onscroll = () => {
-    sectios.forEach(sec => {
+    sections.forEach(sec => {
       let top = window.scrollY;
       let offset = sec.offsetTop - 150;
       let height = sec.offsetHeight;
