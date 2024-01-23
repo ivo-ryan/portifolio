@@ -7,7 +7,6 @@ export const Navbar = styled.header`
         min-width: 100%;
         min-height: 100px;
         background-color: var(--bg-color) ;
-        background-size: 300% 300%;
         padding: 2rem 9%;
         position: fixed;
         top: 0;
@@ -16,7 +15,7 @@ export const Navbar = styled.header`
 
         svg{
             cursor: pointer;
-            transition: 0.5s ease;
+           
         }
 
         #menu-icon{
@@ -42,8 +41,7 @@ export const Navbar = styled.header`
             }
 
             .bx-x {
-                display: block;
-                transition: .5s ease;
+                display: block;       
             }
         
         }   
@@ -63,7 +61,6 @@ export const Nav = styled.nav`
         align-items: center;
         list-style: none;
         flex-wrap: wrap;
-        
 
         @media (max-width: 768px) {
             display: ${props => props.display};
@@ -90,17 +87,7 @@ export const Nav = styled.nav`
         }
 
         li{
-            cursor:pointer;
-            filter: drop-shadow(0px 0px 3px   var(--second-bg-color));
-            border-radius: 5px;
             padding: 5px 10px;
-            animation: border 2s ease alternate infinite;
-
-            @keyframes border {
-                to{
-                    filter: drop-shadow(0px  0px  6px   var(--second-bg-color));
-                }
-            }
 
             a{
                 text-decoration: none;

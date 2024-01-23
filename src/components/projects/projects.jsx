@@ -1,6 +1,7 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { Portifolio, PortifolioBox, PortifolioLayer } from "./style";
 import Code from '../../assets/code.webp';
+import Pokedex from '../../assets/pokedex.gif';
 
 
 export const Projects = () => {
@@ -21,7 +22,7 @@ export const Projects = () => {
        
            className="portifolio-container">
                 <PortifolioBox >
-                    <img src={Code} alt="" />
+                    <img src={Pokedex} alt="" />
 
                     <PortifolioLayer className="portifolio-layer" >
                     <h4>web Design</h4>

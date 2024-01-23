@@ -41,6 +41,7 @@ export const PortifolioBox  = styled.div`
             overflow: hidden;
             display: flex;
             max-width: 600px;
+            max-height: 600px;
 
             img{
                 width: 100%;

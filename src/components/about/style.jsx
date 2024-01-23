@@ -58,12 +58,43 @@ export const HomeSection = styled.section`
             .home-img{
                 display: flex;
                 align-items: center;
-                justify-content: center;          
+                justify-content: center; 
+                background: var(--main-color) ; 
+                width: 45rem;  
+                height: 45rem;
+                padding: 0 2rem;
+                box-shadow: 0 0 1rem var(--main-color);
+                border-radius: 60% 40% 31% 69% / 50% 40% 60% 50%  ;
+                animation: border 5s ease alternate infinite ;
+
+                @keyframes border {
+                    0%{
+                        border-radius: 71% 29% 41% 59% / 30% 40% 60% 70% ;
+                    }
+
+                    25%{
+                        border-radius:60% 40% 60% 40% / 74% 86% 14% 26% ;
+                    }
+                    50%{
+                        border-radius: 94% 6% 81% 19% / 29% 19% 81% 71%  ;
+                    }
+                    75%{
+                        border-radius: 38% 62% 81% 19% / 91% 46% 54% 9% 
+                    }
+
+                    100%{
+                        border-radius: 80% 20% 88% 12% / 54% 64% 36% 46%  ;
+                    }
+                }
+                 
         
-                    img{
-                        width: 300px;
-                        height: 300px;
+                   img{
+                        width: 80%;
+                        height: 70%;
+                        border-radius: 71% 29% 41% 59% / 30% 40% 60% 70% ;
+
                         animation: up-dow 4s ease alternate infinite;
+                        
 
                         @keyframes up-dow {
                             from{
@@ -80,8 +111,8 @@ export const HomeSection = styled.section`
             @media (max-width: 768px) {
                 flex-direction:column;
 
-                 img{
-                    width: 70vw;
+                 .home-img{
+                    
                     margin-top: 4rem;
                  }
 
@@ -101,7 +132,7 @@ export const HomeSection = styled.section`
 
             @media (max-width: 375px) {
                 img{
-                    width: 90vw;
+                    
                 }
             }
 `;
@@ -137,8 +168,6 @@ export const SocialMedia = styled.div`
 
 
 export const ContainerAbout = styled.section`
-            min-height: 100vh;
-            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -148,8 +177,10 @@ export const ContainerAbout = styled.section`
             .about-img{
                 display: flex;
                 justify-content: center;
-                width: 300px;
-                height: 300px;
+            }
+
+            .about-img img{
+                width: 45vw;
             }
 
             .about-content{
@@ -171,6 +202,12 @@ export const ContainerAbout = styled.section`
 
                 @media (max-width: 768px) {
                     max-width: 80vw;
+
+                    .about-content img{
+                        width: 70vw;
+                        margin-top: 4rem;
+                     }
+    
                 }
 
         
@@ -198,14 +235,14 @@ export const ContainerAbout = styled.section`
             @media (max-width: 768px){
                 flex-direction: column-reverse;
 
-                img{
+                .about-content img{
                     width: 70vw;
                     margin-top: 4rem;
                 }
             }
 
             @media (max-width: 375px) {
-                img{
+                .about-content img{
                     width: 90vw;
                 }
             }
