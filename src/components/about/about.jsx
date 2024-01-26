@@ -1,7 +1,7 @@
 
 import { ContainerAbout, HomeSection, SocialMedia} from "./style";
 import { FaLinkedin , FaGithub , FaTelegram } from 'react-icons/fa';
-import home  from '../../assets/home.jpg';
+import home  from '../../assets/image.png';
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 

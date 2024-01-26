@@ -58,47 +58,18 @@ export const HomeSection = styled.section`
             .home-img{
                 display: flex;
                 align-items: center;
-                justify-content: center; 
-                background: var(--main-color) ; 
-                width: 45rem;  
-                height: 45rem;
-                padding: 0 2rem;
-                box-shadow: 0 0 1rem var(--main-color);
-                border-radius: 60% 40% 31% 69% / 50% 40% 60% 50%  ;
-                animation: border 5s ease alternate infinite ;
-
-                @keyframes border {
-                    0%{
-                        border-radius: 71% 29% 41% 59% / 30% 40% 60% 70% ;
-                    }
-
-                    25%{
-                        border-radius:60% 40% 60% 40% / 74% 86% 14% 26% ;
-                    }
-                    50%{
-                        border-radius: 94% 6% 81% 19% / 29% 19% 81% 71%  ;
-                    }
-                    75%{
-                        border-radius: 38% 62% 81% 19% / 91% 46% 54% 9% 
-                    }
-
-                    100%{
-                        border-radius: 80% 20% 88% 12% / 54% 64% 36% 46%  ;
-                    }
-                }
-                 
-        
+                justify-content: center;  
+                width: 70vw ;
+               
                    img{
-                        width: 80%;
-                        height: 70%;
-                        border-radius: 71% 29% 41% 59% / 30% 40% 60% 70% ;
-
+                        width: 100% ;                     
+                        border-radius: 2rem ;
                         animation: up-dow 4s ease alternate infinite;
                         
 
                         @keyframes up-dow {
                             from{
-                                transform: translateY(-30px); 
+                                transform: translateY(-3rem); 
                             }
                             to{
                                 transform: translateY(0);
@@ -112,12 +83,12 @@ export const HomeSection = styled.section`
                 flex-direction:column;
 
                  .home-img{
-                    
+                    width: 40vw;
                     margin-top: 4rem;
                  }
 
                  .home-content{
-                    width: 80vw;
+                    width: 70vw;
 
 
                      h3{
@@ -130,9 +101,15 @@ export const HomeSection = styled.section`
                  }
             }
 
+            @media (max-width: 425px) {
+                .home-img{
+                    width: 60vw ;
+                }
+            }
+
             @media (max-width: 375px) {
-                img{
-                    
+                .home-img{
+                    width: 70vw;
                 }
             }
 `;
@@ -160,32 +137,31 @@ export const SocialMedia = styled.div`
                 color: var(--second-bg-color);
                 box-shadow: 0 0 1rem var(--main-color);
             }
-
-
-            
+        
         }
 `;
 
 
 export const ContainerAbout = styled.section`
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            gap: 2rem;
+            gap: 4rem;
             background-color: var(--second-bg-color);
 
             .about-img{
                 display: flex;
                 justify-content: center;
+                
             }
 
             .about-img img{
-                width: 45vw;
+                width: 100%;
+                border-radius: 2rem;
             }
 
             .about-content{
-                max-width: 50vw;
-
+                width: 65vw ;
                 h2{
                    text-align: left;
                    line-height: 1.2;
@@ -198,16 +174,6 @@ export const ContainerAbout = styled.section`
                 p{
                    font-size: 1.6rem;
                    margin: 2rem 0 3rem;
-                }
-
-                @media (max-width: 768px) {
-                    max-width: 80vw;
-
-                    .about-content img{
-                        width: 70vw;
-                        margin-top: 4rem;
-                     }
-    
                 }
 
         
@@ -235,15 +201,24 @@ export const ContainerAbout = styled.section`
             @media (max-width: 768px){
                 flex-direction: column-reverse;
 
-                .about-content img{
-                    width: 70vw;
-                    margin-top: 4rem;
+                .about-content{
+                    max-width: 80vw;
+                }
+
+                .about-img {
+                    width: 40vw;
+                }
+            }
+
+            @media (max-width: 425px){
+                .about-img{
+                    width: 60vw ;
                 }
             }
 
             @media (max-width: 375px) {
-                .about-content img{
-                    width: 90vw;
+                .about-img{
+                    width: 70vw;
                 }
             }
 
