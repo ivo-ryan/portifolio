@@ -36,7 +36,7 @@ export const About = () => {
             <h3>E sou um <span ref={ref}></span> </h3>
 
             <p>
-                Olá! sou um desenvolvedor front end ! Me apaixonei pela área , hoje em dia estou capacitado para agregar em qualquer time , contribuindo com as minhas habilidades . Sigo sempre buscando o aprimoramento com novos desafios , estou apto à aprender .
+                Olá ! Sou um desenvolvedor front-end! Que hoje em dia está capacitado para agregar em qualquer time , contribuindo com as minhas habilidades e dedicação . Estou sempre empenhado a realizar tudo com perfeição . Sigo sempre buscando o aprimoramento com novos desafios ...
             </p>
 
             <SocialMedia>
@@ -75,7 +75,7 @@ export const About = () => {
             <h3>Desenvolvedor Front-end!</h3>
 
              <p>
-                Ah , gosto bastante de jogos , a minha preferência são pelos jogos de tiro e ação , já as séries somente algumas acabram me cativando como , Sobrenatural e One Piece , sou muito otaku já maratonei diversos animes , e tenho como preferência One Piece e Jujutsu Kaisen além de outras nerdices😁 . Também gosto muito de esportes , atualmente jogo futebol de salão duas vezes por semana.
+                Gosto bastante de desenvolver sites utilizando React , acho que pelo fato de ter trabalhado com ele primeiro , o Vue pra mim no início ficou parecendo bagunçado , a forma com que é possivél deixar os sites bem dinâmicos e interativos me cativou bastante , tenho por preferência desafios que possam me levar ao limite do meu conhecimento e a evolução do mesmo , quando estou com tempo livre fico assistindo à alguns animes, como One Piece e Jujutsu Kaisen além de outras nerdices😁, sendo o ultimo o meu preferido.
             </p>
 
             <p>

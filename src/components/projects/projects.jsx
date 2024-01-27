@@ -22,13 +22,13 @@ export const Projects = () => {
        
            className="portifolio-container">
                 <PortifolioBox >
-                    <img src={Pokedex} alt="" />
+                    <img src={Pokedex} alt="Projeto Pokedéx" />
 
                     <PortifolioLayer className="portifolio-layer" >
-                    <h4>web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem minima assumenda </p>
+                    <h4>Pokedéx</h4>
+                    <p> Projeto criado utilizando React , React-router , Context-api , Styled-components e a PokéApi </p>
 
-                <a href="#"><BiLinkExternal/></a>
+                <a href="https://pokedex-swart-delta.vercel.app/" target="_blank"><BiLinkExternal/></a>
                     </PortifolioLayer>
                 </PortifolioBox>
 
@@ -40,7 +40,7 @@ export const Projects = () => {
                     <h4>web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem minima assumenda </p>
 
-                <a href="#"><BiLinkExternal/></a>
+                <a href="#" target="_blank"><BiLinkExternal/></a>
                     </PortifolioLayer>            
                 </PortifolioBox>
 
@@ -52,7 +52,7 @@ export const Projects = () => {
                     <h4>web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem minima assumenda blanditiis veniam. Quos eaque unde, </p>
 
-                <a href="#"><BiLinkExternal/></a>
+                <a href="#" target="_blank"><BiLinkExternal/></a>
                     </PortifolioLayer>
                 </PortifolioBox>
 
@@ -65,7 +65,7 @@ export const Projects = () => {
                     <h4>web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem minima assumenda blanditiis veniam. Quos eaque unde, </p>
 
-                <a href="#"><BiLinkExternal/></a>
+                <a href="#" target="_blank"><BiLinkExternal/></a>
                     </PortifolioLayer>
                 </PortifolioBox>
                 
